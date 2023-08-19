@@ -1,0 +1,10 @@
+let text = "Luana";
+let number = 27;
+let verify = true;
+let object = {};
+let array = [];
+let func123 = () => {};
+let date = new Date();
+let blah = undefined;
+let isNull = null;
+let sym = Symbol("");
