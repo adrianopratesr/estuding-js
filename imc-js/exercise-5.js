@@ -1,40 +1,40 @@
-import { peoples, calcularIMC, formatarIMC } from "./exercise-1";
+import { peoples, calculateIMC, formatTextIMC } from "./exercise-1";
 
-const calcularMaior = (people) => {
+const higherIMC = (people) => {
   const person = people.sort((actual, next) => {
-    const actualIMC = calcularIMC(actual.weight, actual.height);
-    const nextIMC = calcularIMC(next.weight, next.height);
+    const actualIMC = calculateIMC(actual.weight, actual.height);
+    const nextIMC = calculateIMC(next.weight, next.height);
     return nextIMC - actualIMC;
   })[0];
 
   console.log(
     `O maior IMC da lista pertence à: ${person.name}, e ela pesa ${
       person.weight
-    }, tem a altura ${person.height} e seu IMC é ${calcularIMC(
+    }, tem a altura ${person.height} e seu IMC é ${calculateIMC(
       person.weight,
       person.height
-    ).toFixed(1)}, o que equivale à ${formatarIMC(imc)}`
+    ).toFixed(1)}, o que equivale à ${formatTextIMC(imc)}`
   );
 };
-calcularMaior(peoples);
+higherIMC(peoples);
 
-const calcularMenor = (people) => {
+const lowerIMC = (people) => {
   const person = people.sort((actual, next) => {
-    const actualIMC = calcularIMC(actual.weight, actual.height);
-    const nextIMC = calcularIMC(next.weight, next.height);
+    const actualIMC = calculateIMC(actual.weight, actual.height);
+    const nextIMC = calculateIMC(next.weight, next.height);
     return actualIMC - nextIMC;
   })[0];
 
   console.log(
     `O menor IMC da lista pertence à: ${person.name}, e ela pesa ${
       person.weight
-    }, tem a altura ${person.height} e seu IMC é ${calcularIMC(
+    }, tem a altura ${person.height} e seu IMC é ${calculateIMC(
       person.weight,
       person.height
-    ).toFixed(1)}, o que equivale à ${formatarIMC(imc)}`
+    ).toFixed(1)}, o que equivale à ${formatTextIMC(imc)}`
   );
 };
-calcularMenor(peoples);
+lowerIMC(peoples);
 
 // o que é um objeto?
 // o que é um function?

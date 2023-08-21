@@ -1,21 +1,21 @@
-import { peoples, calcularIMC, formatarIMC } from "./exercise-1";
+import { peoples, calculateIMC, formatTextIMC } from "./exercise-1";
 
-const calcular = (people) => {
+const descendingOrder = (people) => {
   // ordena e printa em ordem do IMC maior para o menor
   people.sort((actual, next) => {
-    const actualIMC = calcularIMC(actual.weight, actual.height);
-    const nextIMC = calcularIMC(next.weight, next.height);
+    const actualIMC = calculateIMC(actual.weight, actual.height);
+    const nextIMC = calculateIMC(next.weight, next.height);
     return nextIMC - actualIMC;
   });
 
   for (const person of people) {
-    const imc = calcularIMC(person.weight, person.height);
+    const imc = calculateIMC(person.weight, person.height);
     console.log(
       `A pessoa ${person.name} com altura ${person.weight} tem o peso ${
         person.height
-      } e está com imc: ${formatarIMC(imc)}`
+      } e está com imc: ${formatTextIMC(imc)}`
     );
   }
 };
 
-calcular(peoples);
+descendingOrder(peoples);

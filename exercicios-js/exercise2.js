@@ -1,5 +1,5 @@
 // Faça um programa para converter um certo valor em dólar para reais (ver cotação do dia).
-let dolar = 10;
+const dolar = 10;
 const DOLLAR_EXCHANGE = 4.96;
 
 const convertFromUSDToBRL = (amount, DOLLAR_EXCHANGE) =>

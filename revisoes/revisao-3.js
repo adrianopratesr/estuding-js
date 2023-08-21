@@ -24,14 +24,14 @@ const isOdd = (a) => {
 console.log(isOdd(10));
 
 //função que printa uma string em duas linhas
-const twoLines = (a, b) => {
+const breakStringInTwoLines = (a, b) => {
   return `${a} \n${b}`;
 };
 
-console.log(twoLines("Luana", "Luz"));
+console.log(breakStringInTwoLines("Luana", "Luz"));
 
 //printando data e hora atual DD/MM/AAAA HH:MM:SS
-const data = () => {
+const currentDate = () => {
   const date = new Date();
   const day = padStart(date.getDate());
   const month = padStart(date.getMonth());
@@ -50,7 +50,7 @@ const padStart = (number) => {
   return String(number).padStart(2, "0");
 };
 
-console.log(data());
+console.log(currentDate());
 
 //  Calculando a Diferença Entre Duas Datas
 const dataA = new Date(23, 8, 19);

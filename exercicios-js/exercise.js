@@ -1,15 +1,13 @@
 // Faça um programa que leia três notas, calcule e mostre a média entre elas.
-let notas = [10, 15, 20];
+const grades = [10, 15, 20];
 
-const mediaNotas = (nota) => {
-  const initialValue = 0;
-  const sumWithInitial = nota.reduce(
+const calculateAverageGrades = (grade) => {
+  const sumWithInitial = grade.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
-    initialValue
+    0
   );
 
-  const media = sumWithInitial / notas.length;
-  return media;
+  return sumWithInitial / grades.length;
 };
 
-console.log(mediaNotas(notas));
+console.log(calculateAverageGrades(grades));

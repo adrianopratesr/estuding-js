@@ -32,18 +32,14 @@ export const peoples = [
   },
 ];
 
-//declarando variáveis para usar na função
-var peso = 50;
-var altura = 1.5;
-
 //esta função realiza o calculo do IMC
-export function calcularIMC(peso, altura) {
+export function calculateIMC(peso, altura) {
   imc = peso / (altura * altura);
   return imc;
 }
 
 //esta função realiza a comparação do resultado do IMC e retorna uma mensagem em qual nível do IMC a pessoa se encontra
-export function formatarIMC(imc) {
+export function formatTextIMC(imc) {
   if (imc < 18.5) {
     return "Abaixo do peso";
   } else if (imc >= 18.6 && imc <= 24.9) {

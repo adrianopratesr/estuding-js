@@ -1,12 +1,12 @@
-import { peoples, calcularIMC, formatarIMC } from "./exercise-1";
+import { peoples, calculateIMC, formatTextIMC } from "./exercise-1";
 
-const calcular = (people) => {
+const calculingAverageIMC = (people) => {
   // qual o imc médio da lista
   const qtdPessoas = people.length;
   let somaIMC = 0;
 
   for (const person of people) {
-    const imc = calcularIMC(person.weight, person.height);
+    const imc = calculateIMC(person.weight, person.height);
     somaIMC += imc;
     // console.log(`O IMC médio da lista é: ${calcularIMC}`);somaIMC / qtdPessoa
   }
@@ -15,8 +15,8 @@ const calcular = (people) => {
   console.log(
     `A média do IMC de todas as pessoas é ${mediaIMC.toFixed(
       1
-    )} - ${formatarIMC(mediaIMC)}`
+    )} - ${formatTextIMC(mediaIMC)}`
   );
 };
 
-calcular(peoples);
+calculingAverageIMC(peoples);

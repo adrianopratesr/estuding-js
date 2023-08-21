@@ -1,7 +1,7 @@
 // Escreva um código que verifica a idade de uma pessoa e imprime se ela pode dirigir. Se a idade for maior ou igual a 18, imprima "Você pode dirigir". Caso contrário, imprima "Você não pode dirigir".
-let a = 20;
+const a = 20;
 
-const verificarIdade = (value) => {
+const verifyAge = (value) => {
   if (value >= 18) {
     return "Você pode dirigir";
   } else {
@@ -9,4 +9,4 @@ const verificarIdade = (value) => {
   }
 };
 
-console.log(verificarIdade(a));
+console.log(verifyAge(a));
