@@ -2,8 +2,8 @@
 const amount = 100;
 const DOLLAR_EXCHANGE = 4.96;
 
-const convertFromBRLtoUSD = (brl, DOLLAR_EXCHANGE) => {
-  return (brl / DOLLAR_EXCHANGE).toFixed(2);
+const convertFromBRLtoUSD = (amount, DOLLAR_EXCHANGE) => {
+  return (amount / DOLLAR_EXCHANGE).toFixed(2);
 };
 
 console.log(

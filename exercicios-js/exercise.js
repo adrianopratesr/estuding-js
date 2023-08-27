@@ -2,12 +2,12 @@
 const grades = [10, 15, 20];
 
 const calculateAverageGrades = (grade) => {
-  const sumWithInitial = grade.reduce(
+  const sumOfGrades = grade.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
     0
   );
 
-  return sumWithInitial / grades.length;
+  return sumOfGrades / grades.length;
 };
 
 console.log(calculateAverageGrades(grades));

@@ -1,6 +1,6 @@
 import { peoples, calculateIMC } from "./exercise-1";
 
-const orderAlphabetically = (people) => {
+const orderByNameASC = (people) => {
   // ordena e printa em ordem alfabetica
   people.sort((actual, next) => {
     return actual.name.localeCompare(next.name);
@@ -15,4 +15,4 @@ const orderAlphabetically = (people) => {
   }
 };
 
-orderAlphabetically(peoples);
+orderByNameASC(peoples);

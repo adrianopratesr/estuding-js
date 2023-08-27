@@ -31,7 +31,7 @@ const breakStringInTwoLines = (a, b) => {
 console.log(breakStringInTwoLines("Luana", "Luz"));
 
 //printando data e hora atual DD/MM/AAAA HH:MM:SS
-const currentDate = () => {
+const formatCurrentDate = () => {
   const date = new Date();
   const day = padStart(date.getDate());
   const month = padStart(date.getMonth());
@@ -50,15 +50,15 @@ const padStart = (number) => {
   return String(number).padStart(2, "0");
 };
 
-console.log(currentDate());
+console.log(formatCurrentDate());
 
 //  Calculando a Diferença Entre Duas Datas
-const dataA = new Date(23, 8, 19);
-const dataB = new Date(23, 8, 10);
+const dateA = new Date(23, 8, 19);
+const dateB = new Date(23, 8, 10);
 
-const diferenca = (valueA, valueB) => {
-  const dataC = valueA - valueB;
-  return dataC / 1000 / 60 / 60 / 24;
+const difference = (valueA, valueB) => {
+  const dateC = valueA - valueB;
+  return dateC / 1000 / 60 / 60 / 24;
 };
 
-console.log(diferenca(dataA, dataB));
+console.log(difference(dateA, dateB));

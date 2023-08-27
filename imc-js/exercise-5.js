@@ -1,6 +1,6 @@
 import { peoples, calculateIMC, formatTextIMC } from "./exercise-1";
 
-const higherIMC = (people) => {
+const getHigherIMC = (people) => {
   const person = people.sort((actual, next) => {
     const actualIMC = calculateIMC(actual.weight, actual.height);
     const nextIMC = calculateIMC(next.weight, next.height);
@@ -16,9 +16,9 @@ const higherIMC = (people) => {
     ).toFixed(1)}, o que equivale à ${formatTextIMC(imc)}`
   );
 };
-higherIMC(peoples);
+getHigherIMC(peoples);
 
-const lowerIMC = (people) => {
+const getLowerIMC = (people) => {
   const person = people.sort((actual, next) => {
     const actualIMC = calculateIMC(actual.weight, actual.height);
     const nextIMC = calculateIMC(next.weight, next.height);
@@ -34,11 +34,4 @@ const lowerIMC = (people) => {
     ).toFixed(1)}, o que equivale à ${formatTextIMC(imc)}`
   );
 };
-lowerIMC(peoples);
-
-// o que é um objeto?
-// o que é um function?
-// o que é uma variável?
-// o que é uma constante?
-// o que são arrays?
-// quais são as principais funções de interadores?
+getLowerIMC(peoples);

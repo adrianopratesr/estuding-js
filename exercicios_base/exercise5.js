@@ -2,8 +2,8 @@
 const weight = 60;
 const height = 1.5;
 
-const calculateIMC = (peso, altura) => {
-  return peso / (altura * altura);
+const calculateIMC = (weight, height) => {
+  return weight / (height * height);
 };
 
 const formatIMC = (imc) => {

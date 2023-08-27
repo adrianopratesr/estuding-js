@@ -33,9 +33,8 @@ export const peoples = [
 ];
 
 //esta função realiza o calculo do IMC
-export function calculateIMC(peso, altura) {
-  imc = peso / (altura * altura);
-  return imc;
+export function calculateIMC(weight, height) {
+  return weight / (height * height);
 }
 
 //esta função realiza a comparação do resultado do IMC e retorna uma mensagem em qual nível do IMC a pessoa se encontra

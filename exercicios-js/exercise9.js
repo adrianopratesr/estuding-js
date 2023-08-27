@@ -10,15 +10,15 @@
 // Dado as variáveis idade, acompanhadoPorAdulto, lotacaoAtual, temPasseEspecial e temCartaoSaude, escreva uma função em JavaScript para determinar se o visitante pode entrar na atração.
 
 const age = 71;
-const accompaniedByAdult = false;
-const haveHelthCard = true;
+const withAdult = false;
+const hasHealthCard = true;
 const currentCapacity = 50;
 const haveSpecialPass = true;
 
 const admissionPark = (
   age,
-  accompaniedByAdult,
-  haveHelthCard,
+  withAdult,
+  hasHealthCard,
   currentCapacity,
   haveSpecialPass
 ) => {
@@ -26,9 +26,9 @@ const admissionPark = (
     return true;
   } else if (age < 12) {
     return false;
-  } else if (age >= 12 && age <= 18 && !accompaniedByAdult) {
+  } else if (age >= 12 && age <= 18 && !withAdult) {
     return false;
-  } else if (((age >= 12 && age <= 15) || age >= 70) && !haveHelthCard) {
+  } else if (((age >= 12 && age <= 15) || age >= 70) && !hasHealthCard) {
     return false;
   } else if (age >= 70 && currentCapacity >= 50) {
     return false;
@@ -40,8 +40,8 @@ const admissionPark = (
 console.log(
   admissionPark(
     age,
-    accompaniedByAdult,
-    haveHelthCard,
+    withAdult,
+    hasHealthCard,
     currentCapacity,
     haveSpecialPass
   )

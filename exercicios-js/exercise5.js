@@ -1,8 +1,8 @@
 //Faça um programa que leia o valor de um produto e imprimir o valor corrigido com o reajuste de 33.33%.
 const amount = 100;
 const TAX = 1.3333;
-const readjustment = (product, readjustmentrate) => {
-  return (product * readjustmentrate).toFixed(2);
+const readjustment = (product, readjustmentRate) => {
+  return (product * readjustmentRate).toFixed(2);
 };
 
 console.log(
