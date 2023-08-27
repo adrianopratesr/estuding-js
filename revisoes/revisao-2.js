@@ -1,0 +1,10 @@
+const text = "Luana";
+const number = 27;
+const verify = true;
+const object = {};
+const array = [];
+const func123 = () => {};
+const date = new Date();
+const blah = undefined;
+const isNull = null;
+const sym = Symbol("");
